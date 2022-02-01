@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sedona - форма отзыва</title>
+  <link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/feedback-form.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header__container">
+      <ul class="header__list list-reset">
+        <li class="header__item"><a class="header__link">Главная</a></li>
+        <li class="header__item"><a href="foto&video.html" class="header__link">Фото и видео</a></li>
+        <li class="header__item"><a href="feedback-form.html" class="header__link">Форма отзыва</a></li>
+        <li class="header__item"><a href="https://htmlacademy.ru" class="header__link" target="_blank">Html academy</a></li>
+      </ul>
+      <button class="header__close-button button-reset" aria-label="Close menu"></button>
+      <div class="header__logo">
+        <a><img src="img/logotyle-mobile.svg" alt="logo" class="header__image"></a>
+        <a><img src="img/logotype-desktop.svg" alt="logo" class="header__image-desktop"></a>
+        <button class="header__logo--burger button-reset" aria-label="Open menu"></button>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="main-container">
+      <section class="hero">
+        <img src="img/text-sedona.svg" alt="Welcome" class="hero__title">
+        <img src="img/intro-triangle.svg" alt="triangle" class="hero__triangle">
+      </section>
+
+      <form class="feedback-form" action="#" method="get">
+        <div class="feedback-form__item feedback-form-heading">
+          <h2 class="feedback-form__title feedback-form-heading__title">Оставьте свой отзыв</h2>
+          <p class="feedback-form__descr">Помогите нашим отелям стать
+            лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях
+          </p>
+        </div>
+
+        <div class="feedback-form__item introduce">
+          <h3 class="feedback-form__title inroduce__title">Представьтесь:</h3>
+          <div class="inroduce__item">
+            <label for="name">Имя*:</label>
+            <input type="text" name="name" id="name" placeholder="Пётр" required>
+          </div>
+          <div class="inroduce__item">
+            <label for="surname">Фамилия*:</label>
+            <input type="text" name="surname" id="surname" placeholder="Иванов" required>
+          </div>
+          <div class="inroduce__item">
+            <label for="patronymic">Отчество:</label>
+            <input type="text" name="patronymic" id="patronymic" placeholder="Александрович">
+          </div>
+        </div>
+
+        <div class="feedback-form__item contacts">
+          <h3 class="feedback-form__title contacts__title">Контактная информация:</h3>
+          <div class="contacts__phone contacts__item">
+            <label for="phone"><span class="reduction">Контактный </span>телефон*:</label>
+            <input type="tel" name="phone" id="phone" placeholder="Введите телефон" required>
+          </div>
+          <div class="contacts__email contacts__item">
+            <label for="email">Электронная почта*:</label>
+            <input type="email" name="email" id="email" placeholder="Введите e-mail" required>
+          </div>
+        </div>
+
+        <div class="feedback-form__item impression">
+          <h3 class="feedback-form__title impression__title">Ваше общее впечатление:</h3>
+          <div class="impression-form">
+            <div class="impression-form__radio-button">
+              <input type="radio" id="positively" 
+                name="impression" value="positively">
+              <label for="positively">Скорее положительное</label>
+            </div>
+            <div class="impression-form__radio-button">
+              <input type="radio" id="negative"
+                name="impression" value="negative">
+              <label for="negative">Скорее отрицательное</label>
+            </div>
+            <div class="impression-form__radio-button">
+              <input type="radio" id="can-not-answer"
+                name="impression" value="can-not-answer">
+              <label for="can-not-answer">Затрудняюсь ответить</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="feedback-form__item attractions">
+          <h3 class="feedback-form__title attractions__title">Посещенные<br> достопримечательности:</h3>
+          <div class="attraction-checkbox">
+            <div class="attraction-checkbox__item">
+              <input type="checkbox" id="bridge" name="bridge">
+              <label for="bridge">Мост Дьявола</label>
+            </div>
+            <div class="attraction-checkbox__item">
+              <input type="checkbox" id="mountain" name="mountain">
+              <label for="mountain">Гора-Колокол</label>
+            </div>
+            <div class="attraction-checkbox__item">
+              <input type="checkbox" id="park" name="park">
+              <label for="park">Слайд-парк</label>
+            </div>
+            <div class="attraction-checkbox__item">
+              <input type="checkbox" id="rocks" name="rocks">
+              <label for="rocks">Красные скалы</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="feedback-form__item review">
+          <h3 class="feedback-form__title review__title">Опишите свои эмоции:</h3>
+          <textarea class="review__textarea" name="review" id="review" cols="30" rows="6" 
+            placeholder="Опишите подробно все свои восторги">
+          </textarea>
+        </div>
+
+        <div class="feedback-form__item submit">
+          <input class="button button-reset" type="submit" value="Отправить отзыв">
+          <span class="note">* - Обязательно для заполенения</span>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <span class="footer__hashtag">#visitSEDONA</span>
+    <ul class="footer__social list-reset">
+      <li class="footer__item">
+        <a href="#" class="footer__link"><img src="img/icon-twitter.svg" alt="twitter"></a>
+      </li>
+      <li class="footer__item">
+        <a href="#" class="footer__link"><img src="img/icon-facebook.svg" alt="facebook"></a>
+      </li>
+      <li class="footer__item">
+        <a href="#" class="footer__link"><img src="img/icon-youtube.svg" alt="youtube"></a>
+      </li>
+    </ul>
+    <div class="footer__copyright copyright">
+      <span class="footer__descr">Разработано</span>
+      <img src="img/htmlacademy.svg" alt="htmlacademy-logo">
+    </div>
+  </footer>
+
+  <script src="js/mobile-menu.js"></script>
+  
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sedona</title>
+  <link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header__container">
+      <ul class="header__list list-reset">
+        <li class="header__item"><a class="header__link">Главная</a></li>
+        <li class="header__item"><a href="foto&video.html" class="header__link">Фото и видео</a></li>
+        <li class="header__item"><a href="feedback-form.html" class="header__link">Форма отзыва</a></li>
+        <li class="header__item"><a href="https://htmlacademy.ru" class="header__link" target="_blank">Html academy</a></li>
+      </ul>
+      <button class="header__close-button button-reset" aria-label="Close menu"></button>
+      <div class="header__logo">
+        <a><img src="img/logotyle-mobile.svg" alt="logo" class="header__image"></a>
+        <a><img src="img/logotype-desktop.svg" alt="logo" class="header__image-desktop"></a>
+        <button class="header__logo--burger button-reset" aria-label="Open menu"></button>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="main-container">
+      <section class="hero">
+        <img src="img/text-index.svg" alt="Welcome" class="hero__title">
+        <img src="img/intro-triangle.svg" alt="triangle" class="hero__triangle">
+      </section>
+
+      <section class="features">
+        <div class="features__wrapper wrapper">
+          <h2 class="wrapper__title">СЕДОНА&nbsp;&mdash; небольшой городок в&nbsp;АРИЗОНЕ, заслуживающий большего!</h2>
+          <p class="wrapper__descr">Рассмотрим 5&nbsp;причин, по&nbsp;которым Седона круче, чем гранд каньон!</p>
+        </div>
+
+        <div class="features__list">
+          <div class="features__item features-city">
+            <img src="img/white copy 2.svg" alt="triangle" class="features-city__image">
+            <h3 class="features__title features-city__title">Настоящий городок</h3>
+            <span class="features__number">— №1 —</span>
+            <p class="features__descr features-city__descr">Седона не&nbsp;аттракцион для туристов там течет своя жизнь</p>
+          </div>
+          
+          <img src="img/photo-city@1x.jpg" alt="photo-city" class="features__image features__image--city">
+          
+          <ul class="features__recommendations list-recommendations list-reset">
+            <li class="list-recommendations__item recommendations-lodging">
+              <h4 class="list-recommendations__title">Жилье</h4>
+              <p class="list-recommendations__descr">Рекомендуем пожить в настоящем мотелеб все как в кино!</p>
+            </li>
+            <li class="list-recommendations__item recommendations-souvenirs">
+              <h4 class="list-recommendations__title">Сувениры</h4>
+              <p class="list-recommendations__descr">Не только китайского, но и местного производства!</p>
+            </li>
+            <li class="list-recommendations__item recommendations-food">
+              <h4 class="list-recommendations__title">Еда</h4>
+              <p class="list-recommendations__descr">Всегда заказывате фирменный бургер, вы не разочаруетесь!</p>
+            </li>
+          </ul>
+
+          <div class="features__item features-bridge">
+            <h3 class="features__title features-bridge__title">Там есть мост дьявола</h3>
+            <span class="features__number">— №2 —</span>
+            <p class="features__descr features-bridge__descr">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+          </div>
+
+          <img src="img/photo-bridge@1x.jpg" alt="photo-bridge" class="features__image features__image--bridge">
+          
+          <div class="features__item features-square">
+            <h3 class="features__title">Небольшая площадь</h3>
+            <span class="features__number">— №3 —</span>
+            <p class="features__descr features-square__decscr">Все интересные места находятся очень близко</p>
+          </div>
+
+          <div class="features__item features-road">
+            <h3 class="features__title">Красивая дорога</h3>
+            <span class="features__number">— №4 —</span>
+            <p class="features__descr features-road__decscr">Ехать в Седону из Лас-Вегаса<br> совсем не скучно!</p>
+          </div>
+
+          <div class="features__item features-tourists">
+            <h3 class="features__title">Мало туристов</h3>
+            <span class="features__number">— №5 —</span>
+            <p class="features__descr features-tourists__decscr">Большинство едет в Град каньон и толпится там</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="find-hotel">
+        <h3 class="find-hotel__title">Заинтересовались?</h3>
+        <p class="find-hotel__descr">Укажите предполагаемые даты поездки, и мы покадем вас лучшие предложения гостиниц в седоне</p>
+        <button class="button button-reset">Найти гостиницу</button>
+      </section>
+
+      <section class="map"></section>
+      
+    </div>
+  </main>
+
+  <footer class="footer">
+    <span class="footer__hashtag">#visitSEDONA</span>
+    <ul class="footer__social list-reset">
+      <li class="footer__item">
+        <a href="#" class="footer__link"><img src="img/icon-twitter.svg" alt="twitter"></a>
+      </li>
+      <li class="footer__item">
+        <a href="#" class="footer__link"><img src="img/icon-facebook.svg" alt="facebook"></a>
+      </li>
+      <li class="footer__item">
+        <a href="#" class="footer__link"><img src="img/icon-youtube.svg" alt="youtube"></a>
+      </li>
+    </ul>
+    <div class="footer__copyright copyright">
+      <span class="footer__descr">Разработано</span>
+      <img src="img/htmlacademy.svg" alt="htmlacademy-logo">
+    </div>
+  </footer>
+
+  <script src="js/mobile-menu.js"></script>
+  
+</body>
+</html>
+

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sedona - фото и видео</title>
+  <link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/foto&video.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header__container">
+      <ul class="header__list list-reset">
+        <li class="header__item"><a class="header__link">Главная</a></li>
+        <li class="header__item"><a href="foto&video.html" class="header__link">Фото и видео</a></li>
+        <li class="header__item"><a href="feedback-form.html" class="header__link">Форма отзыва</a></li>
+        <li class="header__item"><a href="https://htmlacademy.ru" class="header__link" target="_blank">Html academy</a></li>
+      </ul>
+      <button class="header__close-button button-reset" aria-label="Close menu"></button>
+      <div class="header__logo">
+        <a><img src="img/logotyle-mobile.svg" alt="logo" class="header__image"></a>
+        <a><img src="img/logotype-desktop.svg" alt="logo" class="header__image-desktop"></a>
+        <button class="header__logo--burger button-reset" aria-label="Open menu"></button>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="main-container">
+      <section class="hero">
+        <img src="img/text-sedona.svg" alt="Welcome" class="hero__title">
+        <img src="img/intro-triangle.svg" alt="triangle" class="hero__triangle">
+      </section>
+
+      <section class="gallery">
+        <div class="gallery__item gallery-heading">
+          <h2 class="gallery-heading__title">Фото и видео</h2>
+          <p class="gallery-heading__descr">Не можете решить на путешествие из-за курса? Фотографии 
+            помогут вас забыть о политике и экономике.</p>
+        </div>
+        <div class="gallery__item gallery-road">
+          <img class="gallery__photo" src="img/photo-1-mobile.jpg" alt="road">
+          <h3 class="gallery__title">Неродные просторы</h3>
+          <span class="gallery__author">Автор фото: Борис</span>
+          <div class="gallery__likes likes">
+            <img class="likes__image" src="img/like-icon.svg" alt="like" height="21">
+            <span class="likes__number">1350</span>
+          </div>
+        </div>
+        <div class="gallery__item gallery-flora">
+          <img class="gallery__photo" src="img/photo-2-mobile.jpg" alt="flora">
+          <h3 class="gallery__title">Местная растительность</h3>
+          <span class="gallery__author">Автор фото: Сергей</span>
+          <div class="gallery__likes likes">
+            <img class="likes__image" src="img/like-icon.svg" alt="like" height="21">
+            <span class="likes__number">143</span>
+          </div>
+        </div>
+        <div class="gallery__item gallery-forest">
+          <img class="gallery__photo" src="img/photo-3-mobile.jpg" alt="forest">
+          <h3 class="gallery__title">Дорога на север</h3>
+          <span class="gallery__author">Автор фото: Пётр</span>
+          <div class="gallery__likes likes">
+            <img class="likes__image" src="img/like-icon.svg" alt="like" height="21">
+            <span class="likes__number">96</span>
+          </div>
+        </div>
+        <div class="gallery__item gallery-bridge">
+          <img class="gallery__photo" src="img/photo-4-mobile.jpg" alt="road">
+          <h3 class="gallery__title">Мост дьявола</h3>
+          <span class="gallery__author">Автор фото: Антон</span>
+          <div class="gallery__likes likes">
+            <img class="likes__image" src="img/like-icon.svg" alt="like" height="21">
+            <span class="likes__number">254</span>
+          </div>
+        </div>
+        <div class="gallery__item gallery-video">
+          <h2 class="gallery-video__title">Все еще сомневаетесь?</h2>
+          <p class="gallery-video__descr">Смотрте видеопрезентацию и 
+            скорее за билетами, пока они не подорожали в очередной раз!</p>
+          <iframe class="gallery-video__video" width="320" height="200" 
+            src="https://www.youtube.com/embed/sbrroNzY6dI" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+          </iframe>
+          <!--Элементы управления для кастомного проигрываеля-->
+          <!--<div class="galerry-video__controls">
+            <img src="img/replay.svg" alt="replay button" class="replay">
+            <img src="img/subtitles.svg" alt="subtitles button" class="subtitles">
+            <img src="img/fullscreen.svg" alt="fullscreen button" class="fullscreen">
+          </div>-->
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <span class="footer__hashtag">#visitSEDONA</span>
+    <ul class="footer__social list-reset">
+      <li class="footer__item">
+        <a href="#" class="footer__link"><img src="img/icon-twitter.svg" alt="twitter"></a>
+      </li>
+      <li class="footer__item">
+        <a href="#" class="footer__link"><img src="img/icon-facebook.svg" alt="facebook"></a>
+      </li>
+      <li class="footer__item">
+        <a href="#" class="footer__link"><img src="img/icon-youtube.svg" alt="youtube"></a>
+      </li>
+    </ul>
+    <div class="footer__copyright copyright">
+      <span class="footer__descr">Разработано</span>
+      <img src="img/htmlacademy.svg" alt="htmlacademy-logo">
+    </div>
+  </footer>
+
+  <script src="js/mobile-menu.js"></script>
+  
+</body>
+</html>
